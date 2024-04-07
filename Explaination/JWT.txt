@@ -1,0 +1,5 @@
+1- JWT Object
+
+// 1- Issuer -> meen ely 3ml elToken de (system wla sherka wla eh
+// 2- Audience -> meen ely hya5od elToken (Frontend, wla sherka bra ..)
+// 3- 
