@@ -51,13 +51,6 @@ public class MoviesController: ControllerBase{
     private new List<string> _allowedFiles = new List<string> {".jpg" , ".png"};
     private long _maxAllowedSize = 1048576; // 1mb = 1024*1024
 
-/*
-    // In Case en fe Image , ezay bt3amel ??
-    // 1- b5le elType bta3ha fe elDomain Class Model -> Array of bytes -> byte[]
-    // el Frontend msh hyb3tle byte[] , da hyb3tly IMG (Form) , so ..
-    // 2- 5ale el img fe el DTO : IFormFile
-    // 3- a7wl el formFile le Array of bytes byte[] , Using Stream
-*/
     [HttpPost]
     public async Task<IActionResult> AddNewMovie([FromForm] MovieDTO dto){
         if(dto.Poster == null)  return BadRequest("poster is required");
